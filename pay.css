@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+:root {
+
+    /**
+     * colors
+     */
+  
+    --chinese-violet_30: hsla(304, 14%, 46%, 0.3);
+    --chinese-violet: hsl(304, 14%, 46%);
+    --sonic-silver: hsl(208, 7%, 46%);
+    --old-rose_30: hsla(357, 37%, 62%, 0.3);
+    --ghost-white: hsl(233, 33%, 95%);
+    --light-pink: hsl(357, 93%, 84%);
+    --light-gray: hsl(0, 0%, 80%);
+    --old-rose: hsl(357, 37%, 62%);
+    --seashell: hsl(20, 43%, 93%);
+    --charcoal: hsl(203, 30%, 26%);
+    --white: hsl(0, 0%, 100%);
+  
+    /**
+     * typography
+     */
+  
+    --ff-philosopher: 'Philosopher', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+  
+    --fs-1: 4rem;
+    --fs-2: 3.2rem;
+    --fs-3: 2.7rem;
+    --fs-4: 2.4rem;
+    --fs-5: 2.2rem;
+    --fs-6: 2rem;
+    --fs-7: 1.8rem;
+  
+    --fw-500: 500;
+    --fw-700: 700;
+  
+    /**
+     * spacing
+     */
+  
+    --section-padding: 80px;
+  
+    /**
+     * shadow
+     */
+  
+    --shadow-1: 4px 6px 10px hsla(231, 94%, 7%, 0.06);
+    --shadow-2: 2px 0 15px 5px hsla(231, 94%, 7%, 0.06);
+    --shadow-3: 3px 3px var(--chinese-violet);
+    --shadow-4: 5px 5px var(--chinese-violet);
+  
+    /**
+     * radius
+     */
+  
+    --radius-5: 5px;
+    --radius-10: 10px;
+  
+    /**
+     * clip path
+     */
+  
+    --polygon: polygon(100% 29%,100% 100%,19% 99%,0 56%);
+  
+    /**
+     * transition
+     */
+  
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+  
+  }
+  
+ body {
+	 display: flex;
+	 justify-content: center;
+     background-color: #FFFFFF;
+	 font-family: var(--ff-philosopher);
+}
+ .wrapper {
+	 margin-top: 5%;
+	 width: 60%;
+	 display: flex;
+	 justify-content: center;
+	 font-family: var(--ff-philosopher);
+	 background-color: var(--seashell);
+	 -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+	 -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+	 box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+	 animation: slideUp 2000ms ease;
+}
+ @keyframes slideUp {
+	 0% {
+		 -webkit-transform: translateY(100%);
+		 transform: translateY(100%);
+		 visibility: visible;
+	}
+	 100% {
+		 -webkit-transform: translateY(0);
+		 transform: translateY(0);
+	}
+}
+ .container {
+	 width: 65%;
+	 padding: 5% 10%;
+}
+ h1 {
+	 align-self: center;
+}
+ form {
+	 width: 100%;
+}
+ form > * {
+	 margin-top: 20px;
+}
+ form input {
+	 width: 100%;
+	 min-height: 25px;
+	 border: 0;
+	 font-size: 1rem;
+	 letter-spacing: 0.15rem;
+	 font-family: var(--ff-philosopher);
+	 margin-top: 5px;
+	 color: AFE5FF;
+	 border-radius: 4px;
+}
+ form label {
+	 text-transform: uppercase;
+	 font-size: 12px;
+	 letter-spacing: 2px;
+	 color: #C27A7E;
+}
+ form h1 {
+	 font-size: 24px;
+	 line-height: 10px;
+	 color: #2E4756;
+	 letter-spacing: 1px;
+}
+ form h1:nth-of-type(2) {
+	 margin-top: 10%;
+}
+ .name {
+	 justify-content: space-between;
+	 display: flex;
+	 width: 100%;
+}
+ .name div {
+	 width: 45%;
+}
+ .address-info {
+	 display: flex;
+	 justify-content: space-between;
+}
+ .address-info div {
+	 width: 30%;
+}
+ .cc-info {
+	 display: flex;
+	 justify-content: space-between;
+}
+ .cc-info div {
+	 width: 45%;
+}
+  a {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .btns {
+	 margin: 3px 0;
+	 height: 30px;
+	 width: 40%;
+	 color: #C27A7E;
+	 background-color: #FFFFFF;
+	 text-transform: uppercase; 
+	 letter-spacing: 2px;
+     border: 1px solid #C27A7E;
+     font-family: var(--ff-philosopher);
+	 display: inline-block;
+	 margin-left: 170px;
+}
+a{
+	color: #C27A7E;
+}
+a:hover{
+	color: #FFFFFF;
+}
+ .btns:hover {
+	 animation-name: btn-hov;
+	 animation-duration: 550ms;
+	 animation-fill-mode: forwards;
+}
+ @keyframes btn-hov {
+	 100% {
+		 background-color: #C27A7E;
+		 color: #FFFFFF;
+		 transform: scale(1.05);
+	}
+}
+
+ input:focus, button:focus {
+	 outline: none;
+}
+
+
+
+
+
+
+
+ @media (max-width: 736px) {
+	 .wrapper {
+		 width: 100%;
+	}
+	 .container {
+		 width: 100%;
+	}
+	 .btns {
+		 align-items: center;
+	}
+	 .btns button {
+		 width: 50%;
+	}
+	 form h1 {
+		 text-align: center;
+	}
+	 .name, .address-info, .cc-info {
+		 flex-direction: column;
+		 width: 100%;
+		 justify-content: space-between;
+	}
+	 .name div, .address-info div, .cc-info div {
+		 align-items: center;
+		 flex-direction: column;
+		 width: 100%;
+		 display: flex;
+	}
+	 .street, .cc-num {
+		 text-align: center;
+	}
+	 input {
+		 margin: 5px 0;
+		 min-height: 30px;
+	}
+}
+ 
