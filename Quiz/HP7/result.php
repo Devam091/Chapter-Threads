@@ -297,7 +297,7 @@ color: #fff;
 <?php
   $servername = 'localhost';
   $username = 'root';
-  $password = 'Machin@1';
+  $password = '';
   $db_name = 'chapter threads';
   $conn = mysqli_connect($servername, $username, $password, $db_name);
   if (!$conn){
