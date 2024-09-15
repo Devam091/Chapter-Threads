@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Machin@1";
+$password = "";
 $dbname = "chapter threads";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
